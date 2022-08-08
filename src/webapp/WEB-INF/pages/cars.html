@@ -17,11 +17,11 @@
     </thead>
 
     <div>
-        <th:block th:each="msg : ${cars}">
+        <th:block th:each="car : ${cars}">
             <tr th:align="center">
-                <td th:text="${msg.getName()}"></td>
-                <td th:text="${msg.getModel()}"></td>
-                <td th:text="${msg.getSeries()}"></td>
+                <td th:text="${car.getName()}"></td>
+                <td th:text="${car.getModel()}"></td>
+                <td th:text="${car.getSeries()}"></td>
             </tr>
         </th:block>
     </div>
