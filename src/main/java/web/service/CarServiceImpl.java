@@ -10,7 +10,7 @@ import java.util.List;
 @Component
 public class CarServiceImpl implements CarService {
     @Autowired
-    CarDao carDao;
+    private CarDao carDao;
 
     @Override
     public List<Car> getCars(String count) {
